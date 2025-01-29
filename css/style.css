@@ -1,119 +1,153 @@
-@import url(variable.css);
+@import url('variable.css');
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    outline: 2px solid tomato;
+}
+/********** header ******************/
+.header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
 }
 
-body{
-    background-color: rgba(30, 30, 30, 1);
+
+.ul__menu {
+
+    display: flex;
+    gap: 100px;
+    padding-right: 100px;
+    color: var(--font-color-1);
+}
+.ul__menu li{
+    list-style: none;
+    font-family: "Montserrat-SemiBold";
+}
+.ul__menu li a{
+    color: var(--font-color-1);
+    text-decoration: none;
 }
 
-    
+/********** main ******************/
 
-.container{
-    position: relative;
-    width: 99vw;
-    height: 140svh;
-    background-image: linear-gradient(180deg, #376e401f, #071917cc),url(../storade/img/Rectangle.png);
+.section__home {
+    background-image: linear-gradient(var(--color-gradient-1), var(--color-gradient-2) 100%), var(--banner-1);
     background-size: cover;
-    background-position:center  ;
+    background-position: center;
     background-repeat: no-repeat;
-    margin: 0 auto;
+    height: 135svh;
+
 }
+.article__home {
 
-
-
-.containerhead{
-    position: absolute;
-    width: 99svw;
-    height: 64px;
+    width: 626px;
+    height: 360px;
+    position: relative;
+    left: 21svw;
+    top: 36svh;
     display: flex;
-    flex-direction: row;
-    font-family: "Montserrat-SemiBold";
-    color:var(--color-1);
-
-    .imghead{
-        position: absolute;
-        width: 46px;
-        height: 46px;
-        left: 5px;
-        top: 9px;
-        
-    }
-
-    
-    .Work {
-        position: relative;
-        width: 50px;
-        height: 21px;
-        left: 1305px;
-        top: 21px;
-
-
-    }
-
-    .About {
-        position: relative;
-        width: 60px;
-        height: 21px;
-        left: 1480px;
-        top: 21px;
-
-    }
-
-    .Blog {
-        position: relative;
-        width: 45px;
-        height: 21px;
-        left: 1640px;
-        top: 21px;
-
-    }
-}
-
-.containertext{
-    position: absolute;
-    width:720px ;
-    height:420px ;
-    top: 432px;
-    left: 427px;
-    color:var(--color-1); 
-    display: flex;
-    gap: 40px;
     flex-direction: column;
-
-   h1{
-    position: relative;
-    width: 720px;
-    height: 196px;
-    font-size: 90px;
+    gap: 5px;
+    color: var(--font-color-1);
+    
+}
+.article__home span{
+    font-size: 28px;
     font-family: "Montserrat-SemiBold";
-    }
-
-   h2{
-    position: relative;
-    width: 200px;
-    height: 34px;
-    font-size: 32px;
+}
+.article__home h1{
+    font-size: 75px;
     font-family: "Montserrat-SemiBold";
-   }
 
-   p{
-    position: relative;
-    width: 450px;
-    height: 110px;
-    font-size: 24px;
+}
+.article__home p{
+
+    width: 340px;
     font-family: "Montserrat-Medium";
-
-   }
 }
 
-.containericons{
-    background-color: #071917;
+
+/************* section menu **********************/
+
+.section__icon{
+    background: #071917;
     display: flex;
     justify-content: space-evenly;
+}
 
 
+
+/************** version movil **********************/
+@media (max-width: 960px) {
+    .header{
+
+        padding: 15px;
+    }
+    .ul__menu{
+        gap: 15px;
+        padding-right: 15px;
+    }
+    .section__home{
+        display: flex;
+        justify-content: space-around;
+    }
+    .article__home{
+        left: 0;
+    }
+    .article__home span{
+
+    }
+    .article__home h1{
+        font-size: 70px;
+    }
+    .article__home p{
+
+    }
+    .section__icon{
+        justify-content: space-around;
+    }
+    .section__icon img{
+        width: 45px;
+        height: 45px;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 576px) {
+    .header{
+
+        justify-content: normal;
+    }
+    .div__logo{
+        flex: 1;
+
+    }
+    .div__menu{
+        width: 100%;
+
+    }
+    .ul__menu{
+        display: flex;
+        justify-content: center;
+        padding-right: 0;
+    }
+    .article__home{
+        top: 25svh;
+    }
+    .article__home h1{
+        font-size: 60px;
+    }
+    .section__home{
+        display: flex;
+        justify-content: normal;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 95svh;
+    }
 }
