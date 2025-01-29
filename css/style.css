@@ -85,6 +85,24 @@
     justify-content: space-evenly;
 }
 
+/***************section 2 ******************/
+
+.section_2{
+    height: 134svh;
+    background-color: var(--color-gradient-2);
+}
+
+.imgsect2 {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    position: relative;
+    top: 80px;
+
+    img{
+        width: 97svw;
+        height: 120svh;
+    }
+  }
 
 
 /************** version movil **********************/
@@ -151,3 +169,5 @@
         height: 95svh;
     }
 }
+
+
