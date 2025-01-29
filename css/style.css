@@ -4,6 +4,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/***************section home ******************/
+
+
 /********** header ******************/
 .header {
 
@@ -100,15 +104,11 @@
     .article__home{
         left: 0;
     }
-    .article__home span{
 
-    }
     .article__home h1{
         font-size: 70px;
     }
-    .article__home p{
 
-    }
     .section__icon{
         justify-content: space-around;
     }
