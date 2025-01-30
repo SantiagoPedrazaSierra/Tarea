@@ -6,6 +6,9 @@
     outline: 2px solid tomato;
 
 }
+body{
+    background-color: var(--color-gradient-2);
+}
 
 /***************section home ******************/
 
@@ -154,7 +157,7 @@
 /***************section 4 ******************/
 
 .section_4{
-    height: 120svh;
+    height: 118svh;
     background-color: var(--color-gradient-2);
 }
 
@@ -172,7 +175,7 @@
 
 .imgsect4 {
     display: flex;
-    justify-content: center;  /* Centra horizontalmente */
+    justify-content: center; 
     position: relative;
     top: 0px;
 
@@ -182,6 +185,127 @@
     }
   }
 
+/***************section 5 ******************/
+
+.text5{
+    position: absolute;
+    color:var(--font-color-1);
+    left: 3.47vw;
+    p{
+        font-size: 3.125vw;
+        font-family: "Montserrat-Medium";
+    }
+
+}
+
+  .slider{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 2.08vw;
+    top: 7vw;
+    width: 100%;
+    overflow-x: scroll;
+    padding-bottom: 1.56vw ; 
+    box-sizing: content-box; 
+    background-color: var(--color-gradient-2);
+
+    
+    
+    div{
+        background-color:#145E2A ;
+        width: 26.73vw;
+        height: 43.54vw;
+        flex-shrink: 0;
+        border-radius: 2.43vw;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 1vw 1vw 8px rgb(0, 0, 0);
+        color: white;
+        
+        img{
+            position: absolute;
+            top: 1.8vw;
+            width: 23.75vw;
+            height: auto;
+            display: flex;
+            align-self: center;
+        }
+
+        h1{
+            font-family: "Montserrat-SemiBold";
+            font-size: 1.94vw;
+            position: absolute;
+            top: 19.58vw;
+            width: 23.75vw;
+            height: auto;
+            display: flex;
+            align-self: center;
+            }
+
+        p{
+            position: absolute;
+            font-size: 1.33vw;
+            font-family: "Montserrat-Regular";
+            top: 25.55vw;
+            width: 23.75vw;
+            height: auto;
+            display: flex;
+            align-self: center;
+            }
+
+        button{
+            position: absolute;
+            font-family: "Montserrat-Regular";
+            top: 34.02vw;
+            border-radius: 1.66vw;
+            height: auto;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.33vw;
+            width: 8.7vw;
+            height: 3vw;
+            background-color:rgba(217, 217, 217, 1) ;
+            cursor: pointer;
+            border: none;
+            }
+    }
+}
+
+/***************Networks ******************/
+
+.Networks{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center; 
+    gap: 54px;
+    top: 18svh;
+    height: 18svh;
+}
+
+/***************carrusel ******************/
+
+.slider::-webkit-scrollbar {
+    
+    height: 10px; /* Altura de la barra de desplazamiento */
+}
+
+.slider::-webkit-scrollbar-track {
+    background: #e5e5e500; /* Color del fondo de la barra */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.slider::-webkit-scrollbar-thumb {
+    background: #2a5b3425; /* Color del deslizador */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+.slider::-webkit-scrollbar-thumb:hover {
+    background: radial-gradient(circle, rgb(50, 146, 76)0%,rgb(26, 71, 38)100%); /* Color del deslizador al pasar el mouse */
+}
 
 /************** version movil **********************/
 @media (max-width: 960px) {
@@ -259,7 +383,7 @@
         height:470px ;
     }
     .text4{
-        width: 36svw;
+        width: 8svw;
         top: 34svh;
         left: 7svw;
 
@@ -275,6 +399,44 @@
             height:450px ;
         }
         
+    }
+    .slider{
+        width: 300svw;
+        height: 55svh;
+        div{
+            width: 45svw;
+            height: 50svh;
+            img{
+                width:40svw;
+                height: 21.5svh;
+                top: 1.5svh;
+            }
+            h1{
+                display:flex ;
+                position: absolute;
+                top: 33vw;
+                width: 39svw;
+                font-size: 3vw;
+            }
+            p{
+                display:flex ;
+                position: absolute;
+                top: 42vw;
+                width: 39svw;
+                font-size: 2.3vw;
+            }
+            button{
+                width: 14svw;
+                height: 3.2svh;
+                font-size: 15px;
+                top: 42svh;
+                border-radius: 2vw;
+            }
+        }
+        
+    }
+    .Networks{
+        top: 0svh;
     }
 }
 
@@ -310,12 +472,12 @@
         height: 95svh;
     }
     .section_2{
-        height:47svh ;
+        height:36.6svh ;
     }
     .text2{
-        width: 50svw;
-        top: 35svh;
-        left: 16svw;
+        width: 38svw;
+        top: 26svh;
+        left: 10svw;
 
         h1{
            font-size: 15px; 
@@ -324,18 +486,19 @@
     .imgsect2{
         top: 40px;
         img{
-            width:115svw;
-            height:40svh;
+            position: relative;
+            width:95svw;
+            height:30svh;
         }
         
     }
     .section_3{
-        height:43svh ;
+        height:33svh ;
     }
     .text3{
-        width: 50svw;
-        top: 33svh;
-        left: 16svw;
+        width: 38svw;
+        top: 26svh;
+        left: 10svw;
 
         h1{
            font-size: 15px; 
@@ -344,18 +507,19 @@
     .imgsect3{
         top: 10px;
         img{
-            width:115svw;
-            height:40svh;
+            position: relative;
+            width:95svw;
+            height:30svh;;
         }
         
     }
     .section_4{
-        height:43svh ;
+        height:33svh ;
     }
     .text4{
-        width: 50svw;
-        top: 34svh;
-        left: 16svw;
+        width: 8svw;
+        top: 26svh;
+        left: 10svw;
 
         h1{
            font-size: 15px; 
@@ -365,10 +529,47 @@
         top:10px;
         img{
             position: relative;
-            width:115svw;
-            height:40svh;
+            width:95svw;
+            height:30svh;
         }
         
+    }
+    .slider{
+        width: 300svw;
+        height: 41svh;
+        div{
+            width: 45svw;
+            height: 37svh;
+            img{
+                width:40svw;
+                height: 14svh;
+                top: 1.5svh;
+            }
+            h1{
+                display:flex ;
+                position: absolute;
+                top: 33vw;
+                width: 40.75vw;
+                font-size: 3vw;
+            }
+            p{
+                display:flex ;
+                position: absolute;
+                top: 42vw;
+                width: 39svw;
+                font-size: 2.3vw;
+            }
+            button{
+                width: 13svw;
+                height: 2svh;
+                font-size: 8px;
+                top: 30svh;
+            }
+        }
+        
+    }
+    .Networks{
+        top: 0svh;
     }
 }
 
