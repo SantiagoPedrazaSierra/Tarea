@@ -1,0 +1,65 @@
+@import url(variable.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background: black;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-left: 5px;
+    padding-right: 30px;
+    padding-bottom: 12px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+.header_logo {
+    img{
+
+    }
+}
+.header_options {
+
+    display: flex;
+    flex-direction: row;
+    gap: 59px;
+    li{
+        list-style: none;
+
+        
+    }
+    a{
+        font-family: "Montserrat-SemiBold";
+        color: var(--color-1);
+        text-decoration: none;
+        font-size: 17px;
+        display: flex;
+        color: var(--font-color-1);
+    }
+}
+.header_vectors{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+
+    li{
+        list-style: none;
+    }
+    a{
+
+    }
+}
+
