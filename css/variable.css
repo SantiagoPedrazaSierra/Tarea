@@ -1,5 +1,6 @@
 :root{
     --font-color-1: #eee;
+    --font-color-2: #145E2A;
     --color-gradient-1: #376e4014;
     --color-gradient-2: #071917;
     --banner-1: url(../storade/img/Rectangle.png);
@@ -15,4 +16,8 @@
 @font-face {
     font-family: "Montserrat-Regular";
     src: url(../storade/font/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url(../storade/font/Montserrat-Light.ttf);
 }
