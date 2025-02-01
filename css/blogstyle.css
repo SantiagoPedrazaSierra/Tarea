@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: var(--color-gradient-2);
+}
 
 
 header{
@@ -85,7 +88,7 @@ nav{
 
 
 
-.content {
+.contentsubmenu {
     display: flex;
     position: relative;
     align-items: center;
@@ -96,6 +99,7 @@ nav{
     padding-left: 130px;
     padding-right: 345px;
     padding-bottom: 12px;
+    gap:100px ;
 
     button {
         background-color: var(--font-color-2);
@@ -104,9 +108,7 @@ nav{
         padding: 8px 12px;
         border-radius: 5px;
         cursor: pointer;
-        font-weight: bold;
         position: relative;
-        width: 6svw;
         font-family: "Montserrat-Medium";
     }
 }
@@ -123,4 +125,291 @@ nav{
         font-size: 15px;
         font-family: "Montserrat-Light";
     }
+}
+
+.main{
+    background: var(--color-gradient-2);
+    display: flex;  
+    padding: 25px;
+    align-items: center;
+    justify-content: left;
+    img{
+        display: flex;
+        width: 70svw;
+        z-index: 0;
+    }
+}
+.textmain{ 
+    position: absolute; 
+    width: 40%;
+    height: 58%;
+    right: 10%;
+    background:var(--font-color-2);
+    color: var(--font-color-1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 22px;
+    padding-top: 90px;
+    padding-left: 20px;
+    padding-right: 32px;
+    padding-bottom: 5px;
+    gap:12px;
+    z-index: 1;
+    
+    p:nth-child(1){
+        font-family: "Montserrat-Light";
+        position: absolute;
+        font-size: 27px;
+        top: 20px;
+  
+    }
+    h1{
+        font-family: "Montserrat-semibold";
+        font-size: 25px;
+    }   
+
+    p{
+        font-family: "Montserrat-Medium";
+        position: relative;
+        font-size: 22px;
+    }
+    button{
+        position: relative;
+        top: 5%;
+        display: flex;
+        justify-content: center;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 25px;
+        border: none;
+        color: var(--color-gradient-2);
+        background: #D9D9D9;
+        font-family: "Montserrat-Light";
+        font-size: 24px;
+    }
+}
+
+.subtitle{
+
+    top: 60.55vw ;
+    position: absolute;
+    color: white;
+    left: 3.54vw ;
+    font-family: "Montserrat-Medium";
+    font-size: 1.94vw;
+
+}
+.fleximg1   {
+    top: 67.01vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap:1.875vw ;
+    width: 100%;
+    justify-content: center;
+   
+    article{
+        display: flex;
+        flex-direction: column;
+        width:31.04vw ;
+        height: 41.18vw;
+        background-color: rgba(20, 94, 42, 1);
+        border-radius: 2.08vw;
+        
+        img{
+            position: absolute;
+            top: 1.458vw;
+            width: 28.75vw;
+            height: 19.72vw;
+            display: flex;
+            align-self: center;
+        }
+
+        h2{
+            font-family: "Montserrat-SemiBold";
+            font-size: 1.944vw;
+            position: absolute;
+            top: 23.47vw;
+            display: flex;
+            align-self: center;
+            color: white;
+        }
+
+        p{
+            position: absolute;
+            top: 28.61vw;
+            font-family: "Montserrat-Regular";
+            font-size: 1.38vw;
+            display: flex;
+            align-self: center;
+            color: rgb(255, 255, 255);
+            width:28.47vw ;
+            height: auto;
+        }
+
+        button{
+            font-family: "Montserrat-Regular";
+            font-size: 1.388vw;
+            box-shadow: 0.8vw 0.9vw 10px rgba(0, 0, 0, 0.456);
+            border: none;
+            position: absolute;
+            display: flex;
+            align-self: center;
+            top: 36.04vw ;
+            width: 8.9vw;
+            height: 2.7vw;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1.3vw;
+            background-color: rgba(217, 217, 217, 1);
+            color: black;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: rgb(185, 185, 185);
+            color: rgb(39, 39, 39);
+        }
+
+
+    }
+ }
+
+
+.fleximg2{
+    top: 109.93vw;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap:1.875vw ;
+    width: 100%;
+    justify-content: center;
+    
+    article{
+        border-radius: 2.08vw;
+        display: flex;
+        flex-direction: column;
+        width:31.04vw ;
+        height: 41.18vw;
+        background-color: rgba(20, 94, 42, 1);
+        
+        img{
+            position: absolute;
+            top: 1.458vw;
+            width: 28.75vw;
+            height: 19.72vw;
+            display: flex;
+            align-self: center;
+        }
+
+        h2{
+            font-family: "Montserrat-SemiBold";
+            font-size: 1.944vw;
+            position: absolute;
+            top: 23.47vw;
+            display: flex;
+            align-self: center;
+            color: white;
+        }
+
+        p{
+            position: absolute;
+            top: 28.61vw;
+            font-family: "Montserrat-Regular";
+            font-size: 1.38vw;
+            display: flex;
+            align-self: center;
+            color: rgb(255, 255, 255);
+            width:28.47vw ;
+            height: auto;
+        }
+
+        button{
+            font-family: "Montserrat-Regular";
+            font-size: 1.388vw;
+            box-shadow: 0.8vw 0.9vw 10px rgba(0, 0, 0, 0.456);
+            border: none;
+            position: absolute;
+            display: flex;
+            align-self: center;
+            top: 36.04vw ;
+            width: 8.9vw;
+            height: 2.7vw;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1.3vw;
+            background-color: rgba(217, 217, 217, 1);
+            color: black;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: rgb(185, 185, 185);
+            color: rgb(39, 39, 39);
+        }
+    }
+
+    
+}
+
+.end{
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+    h2{
+        font-size: 1.94vw; 
+        top: 157.22vw;
+        position: absolute;
+        font-family: "Montserrat-Bold";
+        color: white;
+        align-self: center;
+        display: flex;
+
+    }
+
+    p{
+        position: absolute;
+        top: 161.18vw;
+        align-self: center;
+        display: flex;
+        color: white;
+        font-family: "Montserrat-Regular";
+        width: 60.138vw;
+        font-size: 1.38vw;
+        text-align: center;
+
+        
+
+    }
+
+    img{
+        position: absolute;
+        top: 170.069vw;
+        color: white;
+        align-self: center;
+        display: flex;
+        width: 21.11vw;
+        height: auto;
+
+    }
+
+}
+
+
+.marca_agua{
+    font-family: "Montserrat-Regular";
+    position: absolute;
+    top: 175.138vw;
+    left: 0.416vw;
+    font-size:  1.38vw;
+    color: white;
+    padding-bottom: 1.1vw;
+
 }
