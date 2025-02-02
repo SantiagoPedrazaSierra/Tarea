@@ -413,3 +413,103 @@ nav{
     padding-bottom: 1.1vw;
 
 }
+
+/************** version movil **********************/
+@media (max-width: 960px){
+    .contentsubmenu{
+        padding-top: 12px;
+        padding-left: 80px;
+        padding-right: 345px;
+        padding-bottom: 12px;
+
+        button{
+            padding: 2px 40px;
+        }
+    }
+
+    
+    .textsubmenu{
+        gap: 30px;
+    }
+    
+    
+    .main{
+        background: var(--color-gradient-2);
+        display: flex;  
+        padding: 25px;
+        align-items: center;
+        justify-content: left;
+        img{
+            display: flex;
+            width: 80svw;
+            z-index: 0;
+            padding-right: 80px;
+        }
+    }
+    
+    .textmain{ 
+        height: 270px;
+        width: 380px;
+        right: 25px;
+    
+        p:nth-child(1){
+            font-family: "Montserrat-Light";
+            position: absolute;
+            font-size: 15px;
+            top: 20px;
+      
+        }
+        h1{
+            font-family: "Montserrat-semibold";
+            font-size: 15px;
+        }   
+    
+        p{
+            font-family: "Montserrat-Medium";
+            position: relative;
+            font-size: 12px;
+        }
+        button{
+            position: relative;
+            top: 5%;
+            display: flex;
+            justify-content: center;
+            margin-left: 30%;
+            margin-right: 30%;
+            padding-top: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 25px;
+            border: none;
+            color: var(--color-gradient-2);
+            background: #D9D9D9;
+            font-family: "Montserrat-Light";
+            font-size: 15px;
+        }
+    }
+    .subtitle{
+        top: 73vw;
+    }
+    
+    .fleximg1{
+        display: flex;
+        position: relative;
+        top: 12svh;
+    }
+    .fleximg2{
+        display: flex;
+        position: relative;
+        top: 13.5svh;
+    }
+    .end{
+        position: relative;
+        top: -100svh;
+    }
+    .marca_agua{
+        position: relative;
+        top: 35svh;
+        left: 10px;
+    }
+}
+
+
