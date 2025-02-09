@@ -22,10 +22,12 @@ header{
     padding-bottom: 52px;
 }
 
-nav{
+.header_nav{
     display: flex;
     flex-direction: row;
-    gap: 150px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 .header_logo {
     img{
@@ -37,6 +39,7 @@ nav{
     display: flex;
     flex-direction: row;
     gap: 50px;
+    padding-left: 45svw;
     li{
         list-style: none;
 
@@ -66,6 +69,12 @@ nav{
     }
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
 .line {
     flex-grow: 1;
     width: 90%;
@@ -79,28 +88,15 @@ nav{
 
 .navsubmenu {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: var(--color-gradient-2);
-    position: relative;
-}
-
-
-
-.contentsubmenu {
-    display: flex;
     position: relative;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     top: 70%;
-    padding-top: 12px;
-    padding-left: 130px;
-    padding-right: 345px;
-    padding-bottom: 12px;
+    padding-top: 10px;
+    padding-left: 94px;
+    padding-right: 356px;
     gap:100px ;
-
     button {
         background-color: var(--font-color-2);
         color: var(--font-color-1);
@@ -111,12 +107,13 @@ nav{
         position: relative;
         font-family: "Montserrat-Medium";
     }
+
 }
-
-
 
 .textsubmenu {
     display: flex;
+    width: 100%;
+    height: auto;
     gap: 80px;
     color: var(--font-color-1);
     position: relative;
@@ -135,51 +132,50 @@ nav{
     justify-content: left;
     img{
         display: flex;
-        width: 70svw;
+        position: relative;
+        width: 69svw;
         z-index: 0;
     }
 }
 .textmain{ 
-    position: absolute; 
-    width: 40%;
-    height: 58%;
-    right: 10%;
+    width: 42svw;
+    height: 460px;
+    right: 3svw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: var(--font-color-1);
     background:var(--font-color-2);
     color: var(--font-color-1);
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    overflow: hidden;
     border-radius: 22px;
-    padding-top: 90px;
-    padding-left: 20px;
-    padding-right: 32px;
-    padding-bottom: 5px;
-    gap:12px;
     z-index: 1;
+    padding: 1.7svw;
+    padding-right: 3.3svw;
     
-    p:nth-child(1){
+    div{
         font-family: "Montserrat-Light";
-        position: absolute;
-        font-size: 27px;
-        top: 20px;
+        font-size: 1.5rem;
+        padding-bottom: 124px;
   
     }
     h1{
         font-family: "Montserrat-semibold";
-        font-size: 25px;
+        font-size: 1.7rem;
+        padding-bottom: 18.98px;
     }   
 
     p{
         font-family: "Montserrat-Medium";
-        position: relative;
-        font-size: 22px;
+        font-size: 1.5rem;
+        padding-bottom: 18.98px;
     }
     button{
-        position: relative;
-        top: 5%;
+        width: 196.92px;
+        height: 34.92px;
         display: flex;
-        justify-content: center;
+        align-items: center;
         margin-left: 30%;
         margin-right: 30%;
         padding-top: 5px;
@@ -191,182 +187,193 @@ nav{
         background: #D9D9D9;
         font-family: "Montserrat-Light";
         font-size: 24px;
+
     }
 }
 
 .subtitle{
 
-    top: 60.55vw ;
-    position: absolute;
+    display: flex;
+    padding-left: 51px;
+    padding-top: 58px;
     color: white;
-    left: 3.54vw ;
     font-family: "Montserrat-Medium";
     font-size: 1.94vw;
 
 }
-.fleximg1   {
-    top: 67.01vw;
-    position: absolute;
+
+.container_fleximgs{
     display: flex;
-    flex-direction: row;
-    gap:1.875vw ;
-    width: 100%;
+    flex-direction: column;
     justify-content: center;
-   
-    article{
+    padding: 25px;
+    padding-top: 59px;
+    gap: 25px;
+    .fleximg1   {
         display: flex;
-        flex-direction: column;
-        width:31.04vw ;
-        height: 41.18vw;
-        background-color: rgba(20, 94, 42, 1);
-        border-radius: 2.08vw;
+        flex-direction: row;
+        gap:1.875vw ;
+        width: 100%;
+        justify-content: center;
+       
+        div{
+            display: flex;
+            justify-content: space-between;
+            padding: 7px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            flex-direction: column;
+            width:31.04vw ;
+            height: 41.18vw;
+            background-color: rgba(20, 94, 42, 1);
+            border-radius: 2.08vw;
+            
+            img{
+                width: 28.75vw;
+                height: 19.72vw;
+                display: flex;
+                align-self: center;
+            }
+    
+            h2{
+                font-family: "Montserrat-SemiBold";
+                font-size: 1.944vw;
+                top: 23.47vw;
+                display: flex;
+                align-self: center;
+                color: white;
+            }
+    
+            p{
+                top: 28.61vw;
+                font-family: "Montserrat-Regular";
+                font-size: 1.38vw;
+                display: flex;
+                align-self: center;
+                color: rgb(255, 255, 255);
+                width:28.47vw ;
+                height: auto;
+            }
+    
+            button{
+                font-family: "Montserrat-Regular";
+                font-size: 1.388vw;
+                box-shadow: 0.8vw 0.9vw 10px rgba(0, 0, 0, 0.456);
+                border: none;
+                display: flex;
+                align-self: center;
+                top: 36.04vw ;
+                width: 8.9vw;
+                height: 2.7vw;
+                justify-content: center;
+                align-items: center;
+                border-radius: 1.3vw;
+                background-color: rgba(217, 217, 217, 1);
+                color: black;
+                cursor: pointer;
+            }
+    
+            button:hover{
+                background-color: rgb(185, 185, 185);
+                color: rgb(39, 39, 39);
+            }
+    
+    
+        }
+     }
+    
+    
+    .fleximg2{
+        display: flex;
+        flex-direction: row;
+        gap:1.875vw ;
+        width: 100%;
+        justify-content: center;
         
-        img{
-            position: absolute;
-            top: 1.458vw;
-            width: 28.75vw;
-            height: 19.72vw;
+        div{
+            border-radius: 2.08vw;
             display: flex;
-            align-self: center;
+            justify-content: space-between;
+            padding: 7px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            flex-direction: column;
+            width:31.04vw ;
+            height: 41.18vw;
+            background-color: rgba(20, 94, 42, 1);
+            
+            img{
+                top: 1.458vw;
+                width: 28.75vw;
+                height: 19.72vw;
+                display: flex;
+                align-self: center;
+            }
+    
+            h2{
+                font-family: "Montserrat-SemiBold";
+                font-size: 1.944vw;
+                top: 23.47vw;
+                display: flex;
+                align-self: center;
+                color: white;
+            }
+    
+            p{
+                top: 28.61vw;
+                font-family: "Montserrat-Regular";
+                font-size: 1.38vw;
+                display: flex;
+                align-self: center;
+                color: rgb(255, 255, 255);
+                width:28.47vw ;
+                height: auto;
+            }
+    
+            button{
+                font-family: "Montserrat-Regular";
+                font-size: 1.388vw;
+                box-shadow: 0.8vw 0.9vw 10px rgba(0, 0, 0, 0.456);
+                border: none;
+                display: flex;
+                align-self: center;
+                top: 36.04vw ;
+                width: 8.9vw;
+                height: 2.7vw;
+                justify-content: center;
+                align-items: center;
+                border-radius: 1.3vw;
+                background-color: rgba(217, 217, 217, 1);
+                color: black;
+                cursor: pointer;
+            }
+    
+            button:hover{
+                background-color: rgb(185, 185, 185);
+                color: rgb(39, 39, 39);
+            }
         }
-
-        h2{
-            font-family: "Montserrat-SemiBold";
-            font-size: 1.944vw;
-            position: absolute;
-            top: 23.47vw;
-            display: flex;
-            align-self: center;
-            color: white;
-        }
-
-        p{
-            position: absolute;
-            top: 28.61vw;
-            font-family: "Montserrat-Regular";
-            font-size: 1.38vw;
-            display: flex;
-            align-self: center;
-            color: rgb(255, 255, 255);
-            width:28.47vw ;
-            height: auto;
-        }
-
-        button{
-            font-family: "Montserrat-Regular";
-            font-size: 1.388vw;
-            box-shadow: 0.8vw 0.9vw 10px rgba(0, 0, 0, 0.456);
-            border: none;
-            position: absolute;
-            display: flex;
-            align-self: center;
-            top: 36.04vw ;
-            width: 8.9vw;
-            height: 2.7vw;
-            justify-content: center;
-            align-items: center;
-            border-radius: 1.3vw;
-            background-color: rgba(217, 217, 217, 1);
-            color: black;
-            cursor: pointer;
-        }
-
-        button:hover{
-            background-color: rgb(185, 185, 185);
-            color: rgb(39, 39, 39);
-        }
-
-
+    
+        
     }
- }
+}
 
 
-.fleximg2{
-    top: 109.93vw;
-    position: absolute;
+.footer{
     display: flex;
-    flex-direction: row;
-    gap:1.875vw ;
-    width: 100%;
-    justify-content: center;
-    
-    article{
-        border-radius: 2.08vw;
-        display: flex;
-        flex-direction: column;
-        width:31.04vw ;
-        height: 41.18vw;
-        background-color: rgba(20, 94, 42, 1);
-        
-        img{
-            position: absolute;
-            top: 1.458vw;
-            width: 28.75vw;
-            height: 19.72vw;
-            display: flex;
-            align-self: center;
-        }
+    flex-direction: column;
+    padding-top: 88px;
 
-        h2{
-            font-family: "Montserrat-SemiBold";
-            font-size: 1.944vw;
-            position: absolute;
-            top: 23.47vw;
-            display: flex;
-            align-self: center;
-            color: white;
-        }
-
-        p{
-            position: absolute;
-            top: 28.61vw;
-            font-family: "Montserrat-Regular";
-            font-size: 1.38vw;
-            display: flex;
-            align-self: center;
-            color: rgb(255, 255, 255);
-            width:28.47vw ;
-            height: auto;
-        }
-
-        button{
-            font-family: "Montserrat-Regular";
-            font-size: 1.388vw;
-            box-shadow: 0.8vw 0.9vw 10px rgba(0, 0, 0, 0.456);
-            border: none;
-            position: absolute;
-            display: flex;
-            align-self: center;
-            top: 36.04vw ;
-            width: 8.9vw;
-            height: 2.7vw;
-            justify-content: center;
-            align-items: center;
-            border-radius: 1.3vw;
-            background-color: rgba(217, 217, 217, 1);
-            color: black;
-            cursor: pointer;
-        }
-
-        button:hover{
-            background-color: rgb(185, 185, 185);
-            color: rgb(39, 39, 39);
-        }
-    }
-
-    
 }
 
 .end{
-    
     display: flex;
     flex-direction: column;
+    gap: 23px;
     
     
     h2{
         font-size: 1.94vw; 
-        top: 157.22vw;
-        position: absolute;
         font-family: "Montserrat-Bold";
         color: white;
         align-self: center;
@@ -375,8 +382,6 @@ nav{
     }
 
     p{
-        position: absolute;
-        top: 161.18vw;
         align-self: center;
         display: flex;
         color: white;
@@ -390,8 +395,7 @@ nav{
     }
 
     img{
-        position: absolute;
-        top: 170.069vw;
+        padding-top: 56px;
         color: white;
         align-self: center;
         display: flex;
@@ -405,111 +409,233 @@ nav{
 
 .marca_agua{
     font-family: "Montserrat-Regular";
-    position: absolute;
-    top: 175.138vw;
-    left: 0.416vw;
+    padding-top: 29px;
+    display: flex;
     font-size:  1.38vw;
     color: white;
-    padding-bottom: 1.1vw;
+    justify-content: left;
 
 }
 
 /************** version movil **********************/
 @media (max-width: 960px){
-    .contentsubmenu{
-        padding-top: 12px;
-        padding-left: 80px;
-        padding-right: 345px;
-        padding-bottom: 12px;
-
-        button{
-            padding: 2px 40px;
+    .navsubmenu{
+        padding-top: 20px;
+        padding-left: 40px;
+        .textsubmenu{
+            gap: 55px;
         }
     }
-
-    
-    .textsubmenu{
-        gap: 30px;
-    }
-    
-    
     .main{
-        background: var(--color-gradient-2);
-        display: flex;  
-        padding: 25px;
-        align-items: center;
-        justify-content: left;
-        img{
-            display: flex;
-            width: 80svw;
-            z-index: 0;
-            padding-right: 80px;
-        }
+        padding: 20px;
+        padding-top: 40px;
     }
-    
-    .textmain{ 
-        height: 270px;
-        width: 380px;
-        right: 25px;
-    
-        p:nth-child(1){
+    .textmain{
+        width: 350px;
+        height: 250px;
+        right: 20px;
+        border-radius: 7px;
+        padding: 15px;
+        padding-right: 5px;
+        gap: 15px;
+        div{
             font-family: "Montserrat-Light";
-            position: absolute;
-            font-size: 15px;
-            top: 20px;
+            font-size: 20px;
+            padding-bottom: 1px;
       
         }
         h1{
             font-family: "Montserrat-semibold";
             font-size: 15px;
+            padding-bottom: 1px;
         }   
     
         p{
             font-family: "Montserrat-Medium";
-            position: relative;
-            font-size: 12px;
+            font-size: 14px;
+            padding-bottom: 10px;
         }
         button{
-            position: relative;
-            top: 5%;
+            width: 120px;
+            height: 100px;
             display: flex;
-            justify-content: center;
             margin-left: 30%;
             margin-right: 30%;
-            padding-top: 5px;
-            padding-left: 20px;
+            padding-top: 0px;
+            padding-left: 25px;
             padding-right: 20px;
             border-radius: 25px;
             border: none;
             color: var(--color-gradient-2);
             background: #D9D9D9;
             font-family: "Montserrat-Light";
-            font-size: 15px;
+            font-size: 12px;
         }
-    }
-    .subtitle{
-        top: 73vw;
-    }
-    
-    .fleximg1{
-        display: flex;
-        position: relative;
-        top: 12svh;
-    }
-    .fleximg2{
-        display: flex;
-        position: relative;
-        top: 13.5svh;
-    }
-    .end{
-        position: relative;
-        top: -100svh;
-    }
-    .marca_agua{
-        position: relative;
-        top: 35svh;
-        left: 10px;
     }
 }
 
+@media (max-width: 576px){
+    header{
+        width: 100%;
+    }
+    .header_nav{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+    }
+    .header_options {
 
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding-left: 5px;
+        li{
+            list-style: none;
+    
+            
+        }
+        a{
+            font-family: "Montserrat-SemiBold";
+            color: var(--color-1);
+            text-decoration: none;
+            font-size: 17px;
+            display: flex;
+            color: var(--font-color-1);
+        }
+    }
+    .header_vectors{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    
+        li{
+            list-style: none;
+        }
+        a{
+    
+        }
+    }
+    .main{
+        padding: 20px;
+    }
+    .navsubmenu{
+        width: 100%;
+        padding: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 10px;
+        button{
+            padding: 0px 10px;
+            font-size: 8.5px;
+            border-radius: 3px;
+        }
+        .textsubmenu{
+            gap: 4px;
+            p {
+                font-size: 8.5px;
+                font-family: "Montserrat-Light";
+            }
+        }
+    }
+    .textmain{
+        width: 170px;
+        height: 120px;
+        right: 20px;
+        border-radius: 7px;
+        padding: 7px;
+        padding-right: 5px;
+        gap: 10px;
+        div{
+            font-family: "Montserrat-Light";
+            font-size: 8px;
+            padding-bottom: 1px;
+      
+        }
+        h1{
+            font-family: "Montserrat-semibold";
+            font-size: 8px;
+            padding-bottom: 1px;
+        }   
+    
+        p{
+            font-family: "Montserrat-Medium";
+            font-size: 7px;
+            padding-bottom: 2px;
+        }
+        button{
+            width: 50px;
+            height: 10px;
+            display: flex;
+            margin-left: 35%;
+            margin-right: 30%;
+            padding-top: 0;
+            padding-left: 8px;
+            padding-right: 8px;
+            border-radius: 25px;
+            border: none;
+            color: var(--color-gradient-2);
+            background: #D9D9D9;
+            font-family: "Montserrat-Light";
+            font-size: 5px;
+        }
+    }
+    .subtitle{
+        padding-left: 20px;
+        padding-top: 0px;
+        font-size: 1.94vw;
+    
+    }
+    .container_fleximgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        padding-top: 20px;
+        gap: 5px;
+        .fleximg1 {
+            gap: 5px;
+
+            div{
+                display: flex;
+                justify-content: space-between;
+                padding: 5px;
+                padding-top: 5px;
+                padding-bottom: 7px;
+                flex-direction: column;
+                width:31.04vw ;
+                height: 41.18vw;
+            }
+        }
+        .fleximg2 {
+            gap: 5px;
+            div{
+                display: flex;
+                justify-content: space-between;
+                padding: 5px;
+                padding-top: 5px;
+                padding-bottom: 7px;
+                flex-direction: column;
+                width:31.04vw ;
+                height: 41.18vw;
+            }
+        }
+    }
+    .footer{
+        padding-top: 20px;
+    
+    }
+    .end{
+        gap: 10px;
+        img{
+            padding-top: 10px;
+        }
+    }
+}
+.marca_agua{
+
+    justify-content: left;
+
+}
